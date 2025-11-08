@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: pink;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .side {
+      width: 10em;
+      background: pink;
+    }
+
+    .container {
+      flex: 1;
+      background: greenyellow;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header, footer {
+      height: 100px;
+      background: grey;
+      display: flex;
+      color: white;
+    }
+
+    main {
+      flex: 1;
+      background: grey;
+      display: flex;
+
+      color: white;
+    }
+
+    .separator {
+      height: 10px;
+      background: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="side"></div>
+
+  <div class="container">
+    <header>Header</header>
+    <div class="separator"></div>
+    <main>Main</main>
+    <div class="separator"></div>
+    <footer>Footer</footer>
+  </div>
+
+  <div class="side"></div>
+</body>
+</html>
